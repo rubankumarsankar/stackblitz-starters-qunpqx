@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header and Banner Styling */
+header {
+  text-align: center;
+}
+
+.banner-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* Adjust as needed */
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.logo-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  max-width: 100px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Slightly enlarge logo on hover */
+}
+
+h1 {
+  margin-top: 20px;
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds a shadow effect to the text */
+}
+
+button {
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 200px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid #fa0202;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  color: white;
+  background-color: #fa0202;
+}
+
+.introduction,
+.section-1,
+.section-2,
+.third-section {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.8;
+}
+
+pre {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-left: 3px solid #fa0202;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+pre code {
+  font-family: 'Courier New', Courier, monospace;
+  color: #d63384;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fa0202;
+  color: white;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 0;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .banner-container {
+    height: 200px;
+  }
+  .logo {
+    max-width: 60px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-container {
+    height: 150px;
+  }
+  .logo {
+    max-width: 50px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
